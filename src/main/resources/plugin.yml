@@ -1,0 +1,11 @@
+name: NetherTeleport
+version: '1.0.0'
+main: com.spectrasonic.NetherTeleport.Main
+api-version: '1.21'
+prefix: [ NetherTeleport ]
+authors: [ Spectrasonic ]
+description: Teleports a death player to nether
+commands:
+  ntp:
+    description: Main command for NetherTeleport plugin
+    usage: /ntp <reload/version>
