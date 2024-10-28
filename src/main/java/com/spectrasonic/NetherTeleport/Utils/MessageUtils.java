@@ -10,9 +10,9 @@ public final class MessageUtils {
     public static final String DIVIDER = "----------------------------------------";
     public static final String PREFIX = "&b[&cNetherTeleport&b]&r ";
 
-//    private MessageUtils() {
-//        // Private constructor to prevent instantiation
-//    }
+    private MessageUtils() {
+        // Private constructor to prevent instantiation
+    }
 
     public static void sendMessage(CommandSender sender, String message) {
         sender.sendMessage(colorize(PREFIX + message));
