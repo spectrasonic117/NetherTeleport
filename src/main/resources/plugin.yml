@@ -8,3 +8,13 @@ description: Teleports a death player to nether
 commands:
   ntp:
     description: Main command for NetherTeleport plugin
+permissions:
+  ntp.reload:
+    description: Reloads the config
+    default: op
+  ntp.version:
+    description: Shows the version of the plugin…
+    default: true
+  ntp.setspawn:
+    description: Sets the respawn point
+    default: op

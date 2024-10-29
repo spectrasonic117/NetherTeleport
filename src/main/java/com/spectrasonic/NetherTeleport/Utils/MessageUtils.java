@@ -29,7 +29,7 @@ public final class MessageUtils {
     public static void sendStartupMessage(JavaPlugin plugin) {
         String[] messages = {
                 DIVIDER,
-                PREFIX + "&6" + plugin.getDescription().getName() + "&a Plugin Enabled!",
+                PREFIX + "&f" + plugin.getDescription().getName() + "&a Plugin Enabled!",
                 PREFIX + "&d" + "Version: &b" + plugin.getDescription().getVersion(),
                 PREFIX + "&6" + "Developed by: &c" + plugin.getDescription().getAuthors(),
                 DIVIDER

@@ -2,6 +2,8 @@ package com.spectrasonic.NetherTeleport.Commands;
 
 import com.spectrasonic.NetherTeleport.Main;
 import com.spectrasonic.NetherTeleport.Utils.MessageUtils;
+import com.spectrasonic.NetherTeleport.Utils.SoundUtils;
+import org.bukkit.Sound;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
@@ -21,6 +23,9 @@ public class CommandManager implements CommandExecutor {
             case "reload":
                 plugin.getConfigManager().reloadConfig();
                 MessageUtils.sendMessage(sender, "&aConfig reloaded!");
+                if (sender instanceof Player player) {
+                    SoundUtils.playerSound(player, Sound.ENTITY_PLAYER_LEVELUP, 1.0f, 1.0f);
+                }
                 break;
             case "version":
                 MessageUtils.sendMessage(sender, "&aVersion: &b" + "&d" + plugin.getDescription().getVersion());
