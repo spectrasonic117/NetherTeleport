@@ -1,5 +1,5 @@
 name: NetherTeleport
-version: '1.0.3-SNAPSHOT'
+version: '1.0.4'
 main: com.spectrasonic.NetherTeleport.Main
 api-version: '1.21'
 prefix: [ NetherTeleport ]
@@ -9,12 +9,9 @@ commands:
   ntp:
     description: Main command for NetherTeleport plugin
 permissions:
-  ntp.reload:
-    description: Reloads the config
+  netherteleport.reload:
     default: op
-  ntp.version:
-    description: Shows the version of the plugin…
+  netherteleport.version:
     default: true
-  ntp.setspawn:
-    description: Sets the respawn point
+  netherteleport.setspawn:
     default: op

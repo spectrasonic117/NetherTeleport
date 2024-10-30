@@ -1,3 +1,6 @@
+# Config file for NetherTeleport plugin
+# Developed by Spectrasonic
+
 nether_respawn:
   x: 0
   y: 65

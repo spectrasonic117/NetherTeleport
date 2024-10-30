@@ -18,14 +18,6 @@ public final class MessageUtils {
         sender.sendMessage(colorize(PREFIX + message));
     }
 
-    public static void sendMessage(CommandSender sender, String message, Object... args) {
-        sender.sendMessage(colorize(PREFIX + String.format(message, args)));
-    }
-
-    public static void sendConsoleMessage(String message) {
-        Bukkit.getConsoleSender().sendMessage(colorize(PREFIX + message));
-    }
-
     public static void sendStartupMessage(JavaPlugin plugin) {
         String[] messages = {
                 DIVIDER,

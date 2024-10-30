@@ -17,8 +17,10 @@ public class Main extends JavaPlugin {
     public void onEnable() {
 
         saveDefaultConfig();
-        registerConfigManager();
-        registerListeners();
+        configManager = new ConfigManager(this);
+        configManager.createConfig();
+        getServer().getPluginManager().registerEvents(new PlayerDeathListener(this), this);
+
         registerCommands();
 
         MessageUtils.sendStartupMessage(this);
@@ -38,11 +40,6 @@ public class Main extends JavaPlugin {
     private void registerCommands() {
         Objects.requireNonNull(this.getCommand("ntp")).setTabCompleter(new CommandTabCompleter());
         Objects.requireNonNull(this.getCommand("ntp")).setExecutor(new CommandManager(this));
-    }
-
-    private void registerConfigManager() {
-        configManager = new ConfigManager(this);
-        configManager.createConfig();
     }
 
     public void registerListeners() {
