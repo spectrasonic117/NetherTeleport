@@ -19,8 +19,13 @@ public class CommandManager implements CommandExecutor {
     public boolean onCommand(CommandSender sender, Command command, String label, String[] args) {
         switch (args[0]) {
             case "reload":
+
                 plugin.getConfigManager().reloadConfig();
-                MessageUtils.sendMessage(sender, "&aConfig reloaded!");
+                if (sender != null) {
+                    MessageUtils.sendMessage(sender, "&aConfig reloaded!");
+                } else {
+                    plugin.getLogger().info("Config reloaded!"); // Log en consola si sender no es válido
+                }
                 break;
             case "version":
                 MessageUtils.sendMessage(sender, "&aVersion: &b" + "&d" + plugin.getDescription().getVersion());
