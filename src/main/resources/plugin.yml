@@ -1,17 +1,16 @@
 name: NetherTeleport
-version: '1.0.4'
+version: "{$version}"
 main: com.spectrasonic.NetherTeleport.Main
-api-version: '1.21'
-prefix: [ NetherTeleport ]
-authors: [ Spectrasonic ]
+api-version: "1.20"
+authors: [Spectrasonic]
 description: Teleports a death player to nether
 commands:
-  ntp:
-    description: Main command for NetherTeleport plugin
+    ntp:
+        description: Main command for NetherTeleport plugin
 permissions:
-  netherteleport.reload:
-    default: op
-  netherteleport.version:
-    default: true
-  netherteleport.setspawn:
-    default: op
+    netherteleport.reload:
+        default: op
+    netherteleport.version:
+        default: true
+    netherteleport.setspawn:
+        default: op

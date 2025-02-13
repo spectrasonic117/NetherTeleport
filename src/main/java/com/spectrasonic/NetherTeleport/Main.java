@@ -31,8 +31,6 @@ public class Main extends JavaPlugin {
         MessageUtils.sendShutdownMessage(this);
     }
 
-    // ----------------- Getters -----------------
-
     public ConfigManager getConfigManager() {
         return configManager;
     }

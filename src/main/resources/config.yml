@@ -1,7 +1,8 @@
 # Config file for NetherTeleport plugin
 # Developed by Spectrasonic
 
+# Spawn coordinates in the nether (always respawn to this location)
 nether_respawn:
-  x: 0
-  y: 65
-  z: 0
+    x: 0
+    y: 65
+    z: 0

@@ -1,6 +1,5 @@
 package com.spectrasonic.NetherTeleport.Configs;
 
-import com.spectrasonic.NetherTeleport.Utils.MessageUtils;
 import org.bukkit.configuration.file.FileConfiguration;
 import org.bukkit.configuration.file.YamlConfiguration;
 import org.bukkit.plugin.java.JavaPlugin;
